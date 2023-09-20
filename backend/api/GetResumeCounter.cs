@@ -26,11 +26,11 @@ namespace Company.Function
             updatedCounter = counter;
             updatedCounter.Count += 1;
 
-            var jsonToReturn = JsonConvert.SerializeObject(counter);
+            var jsonToRetun = JsonConvert.SerializeObject(counter);
 
             return new HttpResponseMessage(System.Net.HttpStatusCode.OK)
             {
-                Content = new StringContent(jsonToReturn, Encoding.UTF8, "application/json")
+                Content = new StringContent(jsonToRetun, Encoding.UTF8, "application/json")
             };
         }
     }
